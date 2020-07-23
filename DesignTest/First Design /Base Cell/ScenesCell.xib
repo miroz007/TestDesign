@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScenesCell" id="gTV-IL-0wX" customClass="ScenesCell" customModule="DesignTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5Y-aX-Qr8" customClass="UIViewX" customModule="DesignTest" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="170" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU7-Z2-nsH">
+                                <rect key="frame" x="15" y="24.5" width="44.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdr-vB-Msp" customClass="UIViewX" customModule="DesignTest" customModuleProvider="target">
+                                <rect key="frame" x="125" y="20" width="30" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightbulb.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fLc-4C-Pyd">
+                                        <rect key="frame" x="5" y="3.5" width="20" height="21.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fLc-4C-Pyd" secondAttribute="bottom" constant="5" id="0De-Rw-0UO"/>
+                                    <constraint firstItem="fLc-4C-Pyd" firstAttribute="leading" secondItem="gdr-vB-Msp" secondAttribute="leading" constant="5" id="MYy-wh-BG2"/>
+                                    <constraint firstAttribute="height" constant="30" id="Plh-j1-KNQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="fLc-4C-Pyd" secondAttribute="trailing" constant="5" id="k52-Jw-xnt"/>
+                                    <constraint firstItem="fLc-4C-Pyd" firstAttribute="top" secondItem="gdr-vB-Msp" secondAttribute="top" constant="5" id="kPI-2a-Ccs"/>
+                                    <constraint firstAttribute="width" constant="30" id="lYw-sV-JIU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gdr-vB-Msp" secondAttribute="trailing" constant="15" id="aip-9d-a0J"/>
+                            <constraint firstItem="dU7-Z2-nsH" firstAttribute="centerY" secondItem="w5Y-aX-Qr8" secondAttribute="centerY" id="glr-XZ-4Le"/>
+                            <constraint firstItem="dU7-Z2-nsH" firstAttribute="leading" secondItem="w5Y-aX-Qr8" secondAttribute="leading" constant="15" id="j60-lX-C5N"/>
+                            <constraint firstItem="gdr-vB-Msp" firstAttribute="centerY" secondItem="dU7-Z2-nsH" secondAttribute="centerY" id="oN0-5w-mjP"/>
+                            <constraint firstItem="gdr-vB-Msp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dU7-Z2-nsH" secondAttribute="trailing" constant="20" id="xzc-GJ-ikf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetY">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.75075806221461183" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="w5Y-aX-Qr8" secondAttribute="trailing" constant="5" id="AIo-gJ-m8W"/>
+                <constraint firstItem="w5Y-aX-Qr8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="LTZ-TH-EMa"/>
+                <constraint firstAttribute="bottom" secondItem="w5Y-aX-Qr8" secondAttribute="bottom" constant="5" id="bBj-2V-ZTA"/>
+                <constraint firstItem="w5Y-aX-Qr8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="jIw-pr-0Yg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="180" height="80"/>
+            <point key="canvasLocation" x="230.43478260869566" y="114.50892857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="lightbulb.fill" catalog="system" width="56" height="64"/>
+    </resources>
+</document>
